@@ -1,8 +1,8 @@
-package org.siscode.template;
+package org.siscode.dis;
 
 import net.fabricmc.api.ModInitializer
 
-object Template : ModInitializer {
+object Dis : ModInitializer {
     override fun onInitialize() {
     }
 }
