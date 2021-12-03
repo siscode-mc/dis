@@ -37,3 +37,7 @@ fun Style.underline () : Style {
 fun Style.strikethrough(): Style {
     return this.withFormatting(Formatting.STRIKETHROUGH)
 }
+
+fun Style.obfuscated() : Style {
+    return this.withFormatting(Formatting.OBFUSCATED)
+}
