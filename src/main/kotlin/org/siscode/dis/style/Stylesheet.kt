@@ -26,3 +26,6 @@ fun Style.bold () : Style {
     return this.withFormatting(Formatting.BOLD)
 }
 
+fun Style.italic () : Style {
+    return this.withFormatting(Formatting.ITALIC)
+}
