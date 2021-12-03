@@ -14,6 +14,9 @@ repositories {
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
     // for more information about repositories.
+    maven {
+        url "https://maven.kotlindiscord.com/repository/maven-public/"
+    }
 }
 
 dependencies {
@@ -27,6 +30,8 @@ dependencies {
     modImplementation "net.fabricmc:fabric-language-kotlin:${project.fabric_kt_version}"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 
+    implementation "dev.kord:kord-core:0.8.0-M8"
+    implementation "com.kotlindiscord.kord.extensions:kord-extensions:1.5.1-RC1"
     // PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
     // You may need to force-disable transitiveness on them.
 }
