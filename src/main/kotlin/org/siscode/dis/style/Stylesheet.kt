@@ -33,3 +33,7 @@ fun Style.italic () : Style {
 fun Style.underline () : Style {
     return this.withFormatting(Formatting.UNDERLINE)
 }
+
+fun Style.strikethrough(): Style {
+    return this.withFormatting(Formatting.STRIKETHROUGH)
+}
