@@ -21,3 +21,8 @@ class Stylesheet {
         }
     }
 }
+
+fun Style.bold () : Style {
+    return this.withFormatting(Formatting.BOLD)
+}
+
