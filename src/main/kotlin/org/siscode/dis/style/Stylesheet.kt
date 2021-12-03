@@ -29,3 +29,7 @@ fun Style.bold () : Style {
 fun Style.italic () : Style {
     return this.withFormatting(Formatting.ITALIC)
 }
+
+fun Style.underline () : Style {
+    return this.withFormatting(Formatting.UNDERLINE)
+}
