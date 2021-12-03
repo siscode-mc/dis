@@ -41,3 +41,8 @@ fun Style.strikethrough(): Style {
 fun Style.obfuscated() : Style {
     return this.withFormatting(Formatting.OBFUSCATED)
 }
+
+fun Style.resetFormatting() : Style {
+    return this.withFormatting(Formatting.RESET)
+}
+
