@@ -15,3 +15,4 @@ sealed class DLinkedUser(val uuid: UUID, val discordId: ULong, val minecraftName
         discordUser.name
     )
 }
+class DServer() : DUser
